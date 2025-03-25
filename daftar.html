@@ -17,12 +17,12 @@
     </style>
 </head>
 <body class="min-h-screen content-center">
-    <div class="text-white w-4/5 min-h-[500px] px-8 mx-auto rounded-xl flex flex-col items-center pt-7 bg-zinc-900/50 backdrop-blur-sm md:w-1/2 lg:w-1/3">
+    <div class="text-white w-4/5 min-h-[570px] px-8 mx-auto rounded-xl flex flex-col items-center pt-7 bg-zinc-900/50 backdrop-blur-sm md:w-1/2 lg:w-1/3">
         <header>
             <img src="assets/img/Logo.png" alt="">
             <section class="mt-5 mb-5 flex flex-col items-center">
-                <h1 class="font-semibold text-2xl">Masuk</h1>
-                <p class="text-slate-300">Selamat datang kembali!</p>
+                <h1 class="font-semibold text-2xl">Daftar</h1>
+                <p class="text-slate-300">Selamat datang!</p>
             </section>
         </header>
         <form action="" class="w-full space-y-5">
@@ -34,20 +34,26 @@
                 <span>Kata Sandi</span>
                 <div class="relative w-full ">
                     <input id="KataSandi" type="password" class="border border-slate-300 rounded-full px-4 py-1 w-full" placeholder="Masukkan kata sandi">
-                    <button class="absolute right-3 cursor-pointer top-1"><i class="fa-solid fa-eye-slash"></i></button>
+                    <button class="absolute right-3  cursor-pointer top-1"><i class="fa-solid fa-eye-slash"></i></button>
+                </div>
+            </label>
+            <label for="KataSandi" class="flex flex-col gap-1">
+                <span>Konfirmasi Kata Sandi</span>
+                <div class="relative w-full ">
+                    <input id="KataSandi" type="password" class="border border-slate-300 rounded-full px-4 py-1 w-full" placeholder="Masukkan kata sandi">
+                    <button class="absolute right-3  cursor-pointer top-1"><i class="fa-solid fa-eye-slash"></i></button>
                 </div>
             </label>
         </form>
         <section class="flex justify-between items-center w-full mt-3 text-sm">
             <div>
-                <span class="text-gray-300">Belum punya akun? <a href="/daftar.html" class="text-white">Daftar</a></span>
+                <span class="text-gray-300">Sudah punya akun? <a href="/login.html" class="text-white">Masuk</a></span>
             </div>
-            <a href="lupa_kata_sandi.html" class="text-gray-300">Lupa kata sandi?</a>
         </section>
         <section class="flex items-center flex-col mt-5 w-full">
-            <button class="bg-white/30 font-semibold w-full rounded-full py-2 hover:bg-zinc-700 active:bg-zinc-800 cursor-pointer">Masuk</button>
+            <button class="bg-white/30 font-semibold w-full rounded-full py-2 hover:bg-zinc-700 active:bg-zinc-800 cursor-pointer">Daftar</button>
             <span class="text-gray-400 my-1">Atau</span>
-            <button class="border w-full rounded-full py-2 hover:bg-zinc-700 active:bg-zinc-800 cursor-pointer flex items-center justify-center gap-2"><img src="assets/img/google.png" class="size-4" alt="">Masuk dengan Google</button>
+            <button class="border w-full rounded-full py-2 hover:bg-zinc-700 active:bg-zinc-800 cursor-pointer flex items-center justify-center gap-2"><img src="assets/img/google.png" class="size-4" alt="">Daftar dengan Google</button>
         </section>
     </div>
 </body>
