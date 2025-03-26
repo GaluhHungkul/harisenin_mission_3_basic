@@ -6,61 +6,206 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        nav {
-            background-color: #181A1C;
-        }
-        #banner {
-            background-image: url("assets/img/banner_bg.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
 </head>
-<body >
-    <nav class="h-24 flex items-center justify-between px-5 py-2 lg:px-20 lg:py-6">
-        <div class="flex gap-3 text-white items-center w-[268px]">
-            <img src="assets/img/logo.png" width="25%"  alt="">
-            <a class="text-[10px] hover:text-gray-400" href="#">Series</a>
-            <a class="text-[10px] hover:text-gray-400" href="#">Film</a>
-            <a class="text-[10px] hover:text-gray-400" href="#">Daftar Saya</a>
+<body style="background-color: #181A1C;" class="relative overflow-x-hidden">
+    <!-- Navbar Start-->
+    <nav style="background-color: #181A1C;"  class="sticky top-0 z-50 flex items-center justify-between px-5 py-2 h-14 lg:h-24 lg:px-20 lg:py-6">
+        <div class="flex gap-3 text-white items-center w-[268px] text-[10px] lg:w-[585px] lg:gap-20 lg:text-[18px] ">
+            <img src="assets/img/other/Logo_no_text.png" class="lg:hidden" alt="">
+            <img src="assets/img/other/Logo.png" width="20%" class="hidden lg:block" alt="">
+            <a class=" hover:text-gray-400" href="#">Series</a>
+            <a class=" hover:text-gray-400" href="#">Film</a>
+            <a class=" hover:text-gray-400" href="#">Daftar Saya</a>
         </div>
-        <img src="assets/img/Avatar.png" alt="">
+        <img src="assets/img/other/mobile_Avatar.png" class="lg:hidden" alt="">
+        <img src="assets/img/other/desktop_Avatar.png" class="hidden lg:block" alt="">
     </nav>
-    <main style="background-color: #181A1C;" class="min-h-[500px]">
-        <div class="w-full h-56 pt-10" id="banner">
-            <div class="w-80 h-[118px] mx-auto  text-white flex flex-col  gap-3">
-                <p class="font-bold text-[24px]">Duty After School</p>
-                <p class="text-[12px] font-medium">Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut...</p>
-                <section class="flex justify-between items-center w-full">
-                    <div>
-                        <button style="background-color: #0F1E93;" class=" rounded-full py-1 px-3">Mulai</button>
-                        <button style="background-color: #22282A; " class="py-1 px-3 rounded-full hover:bg-gray-400 "><i class="fa-solid fa-circle-info mr-2"></i>Selengkapnya</button>
-                        <span class="border rounded-full p-1">18+</span>
+    <!-- Navbar End -->
+
+    <!-- Main Page Start -->
+    <main>
+        <!-- Banner Start -->
+        <div style="background-image: url('assets/img/bg/bg_banner.png');" class="w-full h-56 pt-10 lg:h-[587px] relative p-5 bg-cover bg-center bg-no-repeat" >
+            <div class="w-80 h-[138px]  mt-5 text-white flex flex-col gap-3 lg:w-[1280px] lg:h-[233px] lg:gap-5 lg:px-16  lg:mt-56 ">
+                <p class="font-bold text-[24px] lg:text-5xl">Duty After School</p>
+                <p class="text-[12px] line-clamp-2 lg:line-clamp-none font-medium lg:w-[698px] lg:text-lg">Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.</p>
+                <section class="flex items-center justify-between w-full lg:mt-5 ">
+                    <div class="flex gap-[8px] lg:gap-[10px]">
+                        <button  class="lg:px-[26px] lg:py-[10px]  rounded-full text-[12px] py-1 px-3 bg-blue-800 hover:bg-blue-900 lg:text-[16px] active:bg-blue-700">Mulai</button>
+                        <button  class="text-[12px] lg:px-[26px] lg:py-[10px] py-1 px-3 rounded-full  bg-gray-800 hover:bg-gray-900 active:bg-black lg:text-[16px] "><i class="mr-2 fa-solid fa-circle-info "></i>Selengkapnya</button>
+                        <span class="text-[12px] border rounded-full p-1 lg:p-[10px] lg:text-[16px]">18+</span>
                     </div>
-                    <img src="assets/img/volume-off.png" alt="">
+                    <img src="assets/img/other/volume-off.png" class="lg:size-10 hover:brightness-125" alt="">
                 </section>
             </div>
         </div>
-        <div  class="pl-5 py-5">
-            <h1 class="font-bold text-[20px] text-white mb-5">Melanjutkan Tonton Film</h1>
-            <div class="flex gap-4 ">  
-                <section>
-                    <div class="w-[309px] h-[151px] flex items-end justify-between p-4 bg-cover bg-no-repeat bg-center text-white rounded" style="background-image: url('assets/img/dont_look_up.png');">
-                        <p class="font-bold">Don't Look Up</p>
-                        <span><i class="fa-solid fa-star " ></i>4.5/5</span>
-                    </div>
-                </section>
-                <section>
-                    <div class="w-[309px] h-[151px] flex items-end justify-between p-4 bg-cover bg-no-repeat bg-center text-white rounded" style="background-image: url('assets/img/dr_strange.png');">
-                        <p class="font-bold">Doctor Strange</p>
-                        <span><i class="fa-solid fa-star " ></i>4.5/5</span>
-                    </div>
-                </section>
-            </div>           
+         <!-- Banner End -->
+        <div class="flex flex-col pl-5 lg:px-20">        
+            <!-- Melanjutkan Tonton Film Start-->
+            <div class="py-5 lg:py-10 ">
+                <h1 class="font-bold text-[20px] text-white mb-5 lg:text-[32px]">Melanjutkan Tonton Film</h1>
+                <div class="relative flex gap-4 lg:gap-6 w-max ">  
+                    <button class="absolute hidden px-3 py-2 text-white -translate-y-1/2 bg-gray-600 rounded-full cursor-pointer lg:block -left-5 top-1/2 size-max hover:bg-gray-700 active:bg-gray-800 ">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <section>
+                        <div class="w-[302px] h-[151px] flex items-end justify-between p-4 bg-cover bg-no-repeat bg-center text-white rounded lg:h-[162px] " style="background-image: url('assets/img/banner/banner_dont_look_up.png');">
+                            <p class="font-bold">Don't Look Up</p>
+                            <span><i class="fa-solid fa-star " ></i>4.5/5</span>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="w-[302px] h-[151px] flex items-end justify-between p-4 bg-cover bg-no-repeat bg-center text-white rounded lg:h-[162px]" style="background-image: url('assets/img/banner/banner_all_of_us_are_dead.png');">
+                            <p class="font-bold">The Batman</p>
+                            <span><i class="fa-solid fa-star " ></i>4.2/5</span>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="w-[302px] h-[151px] flex items-end justify-between p-4 bg-cover bg-no-repeat bg-center text-white rounded lg:h-[162px] relative" style="background-image: url('assets/img/banner/banner_blue_lock.png');">
+                            <button style="background-color: #0F1E93;" class="text-white z-10 absolute text-[5.74px] rounded-full px-[4.78px] py-[1.41px] top-2 left-2 lg:text-sm lg:py-1 lg:px-[10px]">Episode Baru</button>
+                            <p class="font-bold">Blue Lock</p>
+                            <span><i class="fa-solid fa-star " ></i>4.6/5</span>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="w-[302px] h-[151px] flex items-end justify-between p-4 bg-cover bg-no-repeat bg-center text-white rounded lg:h-[162px]" style="background-image: url('assets/img/banner/banner_a_man_called_otto.png');">
+                            <p class="font-bold">A Man Called Otto</p>
+                            <span><i class="fa-solid fa-star " ></i>4.4/5</span>
+                        </div>
+                    </section>
+                    <button class="absolute z-10 hidden px-3 py-2 text-white -translate-y-1/2 bg-gray-600 rounded-full cursor-pointer lg:block -right-5 top-1/2 size-max hover:bg-gray-700 active:bg-gray-800 ">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>           
+            </div>
+            <!-- Melanjutkan Tonton Film End -->
+
+            <!-- Top Rating Film dan Series Hari ini Start -->
+            <div class="py-5 lg:py-10 ">  
+                <h1 class="font-bold text-[20px] text-white mb-5 lg:text-[32px]">Top Rating Film dan Series Hari ini</h1>
+                <div class="relative flex gap-4 lg:gap-6 w-max">  
+                    <button class="absolute z-10 hidden px-3 py-2 text-white -translate-y-1/2 bg-gray-600 rounded-full cursor-pointer lg:block -left-5 top-1/2 size-max hover:bg-gray-700 active:bg-gray-800 ">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <section class="w-24 h-36 bg-no-repeat bg-cover bg-center lg:w-[234px] lg:h-[365px] relative" style="background-image: url('assets/img/card/card_suzume.png');" >
+                        <button style="background-color: #0F1E93;" class="text-white absolute text-[5.74px] rounded-full px-[4.78px] py-[1.41px] top-2 left-2 lg:text-sm lg:py-1 lg:px-[10px]">Episode Baru</button>
+                    </section>
+                    <section class="w-24 h-36 bg-no-repeat bg-cover relative bg-center lg:w-[234px] lg:h-[365px]" style="background-image: url('assets/img/card/card_jurassic_world.png');" >
+                    </section>
+                    <section class="w-24 h-36 bg-no-repeat bg-cover bg-center lg:w-[234px] lg:h-[365px]" style="background-image: url('assets/img/card/card_sonic.png');" >
+                    </section>
+                    <section class="w-24 h-36 bg-no-repeat bg-cover bg-center lg:w-[234px] lg:h-[365px] relative" style="background-image: url('assets/img/card/card_all_of_us_are_dead.png');" ><button style="background-color: #0F1E93;" class="text-white absolute text-[5.74px] rounded-full px-[4.78px] py-[1.41px] top-2 left-2 lg:text-sm lg:py-1 lg:px-[10px]">Episode Baru</button>
+                    </section>
+                    <section class="w-24 h-36 bg-no-repeat bg-cover bg-center lg:w-[234px] lg:h-[365px] relative" style="background-image: url('assets/img/card/card_big_hero_6.png');" >
+                        <span style="background-color: #B71F1D;" class="absolute p-1 text-center text-white rounded right-1 w-min ">Top 10</span>
+                    </section>
+                    <button class="absolute z-10 hidden px-3 py-2 text-white -translate-y-1/2 bg-gray-600 rounded-full cursor-pointer lg:block -right-5 top-1/2 size-max hover:bg-gray-700 active:bg-gray-800 ">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Top Rating Film dan Series Hari ini End-->
+
+            <!-- Film Trending Start -->
+            <div class="py-5 lg:py-10">  
+                <h1 class="font-bold text-[20px] text-white mb-5 lg:text-[32px]">Film Trending</h1>
+                <div class="relative flex gap-4 lg:gap-6 w-max">  
+                    <button class="absolute z-10 hidden px-3 py-2 text-white -translate-y-1/2 bg-gray-600 rounded-full cursor-pointer lg:block -left-5 top-1/2 size-max hover:bg-gray-700 active:bg-gray-800 ">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <section class="relative w-24 h-36 bg-no-repeat bg-cover bg-center lg:w-[234px] lg:h-[365px] " style="background-image: url('assets/img/card/card_tmw.png');">
+                        <span style="background-color: #B71F1D;" class="absolute text-[6.69px] lg:text-sm right-1 rounded p-1 text-white w-min text-center ">Top 10</span>
+                    </section>
+                    <section class="relative w-24 h-36 bg-no-repeat bg-cover bg-center lg:w-[234px] lg:h-[365px]" style="background-image: url('assets/img/card/card_quantum_mania.png');">
+                        <span style="background-color: #B71F1D;" class="absolute text-[6.69px] lg:text-sm right-1 rounded p-1 text-white w-min text-center ">Top 10</span>
+                    </section>
+                    <section class="relative w-24 h-36 bg-no-repeat bg-cover bg-center lg:w-[234px] lg:h-[365px]" style="background-image: url('assets/img/card/card_guardians_of_the_galaxy.png');" >
+                        <span style="background-color: #B71F1D;" class="absolute text-[6.69px] lg:text-sm right-1 rounded p-1 text-white w-min text-center ">Top 10</span>
+                    </section>
+                    <section class="relative w-24 h-36 bg-no-repeat bg-cover bg-center lg:w-[234px] lg:h-[365px]" style="background-image: url('assets/img/card/card_a_man_called_otto.png');" >
+                        <span style="background-color: #B71F1D;" class="absolute text-[6.69px] lg:text-sm right-1 rounded p-1 text-white w-min text-center ">Top 10</span>
+                    </section>
+                    <section class="relative w-24 h-36 bg-no-repeat bg-cover bg-center lg:w-[234px] lg:h-[365px]" style="background-image: url('assets/img/card/card_the_little_mermaid.png');" >
+                        <span style="background-color: #B71F1D;" class="absolute text-[6.69px] lg:text-sm right-1 rounded p-1 text-white w-min text-center ">Top 10</span>
+                    </section>
+                    <button class="absolute z-10 hidden px-3 py-2 text-white -translate-y-1/2 bg-gray-600 rounded-full cursor-pointer lg:block -right-5 top-1/2 size-max hover:bg-gray-700 active:bg-gray-800 ">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Film Trending End -->
+
+            <!-- Rilis Baru Start -->
+            <div class="py-5 lg:py-10 ">  
+                <h1 class="font-bold text-[20px] text-white mb-5 lg:text-[32px]">Rilis Baru</h1>
+                <div class="relative flex gap-4 lg:gap-6 w-max">  
+                    <button class="absolute z-10 hidden px-3 py-2 text-white -translate-y-1/2 bg-gray-600 rounded-full cursor-pointer lg:block -left-5 top-1/2 size-max hover:bg-gray-700 active:bg-gray-800 ">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <section class="w-24 h-36 lg:w-[234px] lg:h-[365px] bg-no-repeat bg-cover bg-center relative" style="background-image: url('assets/img/card/card_the_little_mermaid.png');" >
+                        <span style="background-color: #B71F1D;" class="absolute text-[6.69px] lg:text-sm right-1 rounded p-1 text-white w-min text-center ">Top 10</span>
+                    </section>
+                    <section class="relative w-24 h-36 lg:w-[234px] lg:h-[365px] bg-no-repeat bg-cover bg-center" style="background-image: url('assets/img/card/card_the_duty_after_school.png');">
+                        <button style="background-color: #0F1E93;" class="text-white absolute lg:text-sm lg:px-2 lg:py-1 text-[5.74px] rounded-full px-[4.78px] py-[1.41px] top-2 left-2">Episode Baru</button>
+                    </section>
+                    <section class="relative w-24 h-36 lg:w-[234px] lg:h-[365px] bg-no-repeat bg-cover bg-center" style="background-image: url('assets/img/card/card_big_hero_6.png');" >
+                        <span style="background-color: #B71F1D;" class="absolute text-[6.69px] lg:text-sm right-1 rounded p-1 text-white w-min text-center ">Top 10</span>
+                    </section>
+                    <section class="relative w-24 h-36 lg:w-[234px] lg:h-[365px] bg-no-repeat bg-cover bg-center" style="background-image: url('assets/img/card/card_all_of_us_are_dead.png');" >
+                        <button style="background-color: #0F1E93;" class="text-white absolute lg:text-sm lg:px-2 lg:py-1 text-[5.74px] rounded-full px-[4.78px] py-[1.41px] top-2 left-2">Episode Baru</button>
+                    </section>
+                    <section class="relative w-24 h-36 lg:w-[234px] lg:h-[365px] bg-no-repeat bg-cover bg-center" style="background-image: url('assets/img/card/card_missing.png');" >
+                    </section>
+                    <button class="absolute z-10 hidden px-3 py-2 text-white -translate-y-1/2 bg-gray-600 rounded-full cursor-pointer lg:block -right-5 top-1/2 size-max hover:bg-gray-700 active:bg-gray-800 ">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Rilis Baru End -->
         </div>
     </main>
+    <!-- Main Page End -->
+
+    <!-- Footer Start -->
+    <footer class="p-5 flex flex-col gap-10 border-t border-gray-600 lg:py-[60px] lg:px-20 lg:flex-row">
+        <div>
+            <img src="assets/img/other/Logo.png"  class="w-20 h-6 mb-4 lg:w-36 lg:h-10" alt="">
+            <p style="color: #C1C2C4;" class="text-[12px] lg:text-[16px]">@2023 Chill All Rights Reserved.</p>
+        </div>
+        <div class="lg:flex">
+            <section class="flex mb-2 justify-between items-center text-white lg:flex-col lg:items-start lg:gap-2 text-[16px]">
+                <p class="lg:text-xl hover:text-gray-500 ">Genre</p>
+                <ul class="hidden grid-cols-4 text-gray-400 lg:grid gap-y-2 gap-x-6" >
+                    <li class="hover:text-gray-500">Aksi</li>
+                    <li class="hover:text-gray-500">Anak-anak</li>
+                    <li class="hover:text-gray-500">Anime</li>
+                    <li class="hover:text-gray-500">Britania</li>
+                    <li class="hover:text-gray-500">Drama</li>
+                    <li class="hover:text-gray-500">Fantasi Ilmiah & Fantasi</li>
+                    <li class="hover:text-gray-500">Kejahatan</li>
+                    <li class="hover:text-gray-500">KDrama</li>
+                    <li class="hover:text-gray-500">Komedi</li>
+                    <li class="hover:text-gray-500">Petualangan</li>
+                    <li class="hover:text-gray-500">Perang</li>
+                    <li class="hover:text-gray-500">Romantis</li>
+                    <li class="hover:text-gray-500">Sains & Alam</li>
+                    <li class="hover:text-gray-500">Thriller</li>
+                </ul>
+                <button class="font-bold lg:hidden hover:text-gray-500">&gt;</button>
+            </section>
+            <section class="flex  justify-between items-center text-white text-[16px] lg:flex-col lg:items-start lg:justify-start">
+                <p class="lg:text-xl hover:text-gray-500 lg:mb-2">Bantuan</p>
+                <ul class="hidden text-gray-400 lg:block " >
+                    <li class="hover:text-gray-500">FAQ</li>
+                    <li class="hover:text-gray-500">Kontak Kami</li>
+                    <li class="hover:text-gray-500">Privasi</li>
+                    <li class="hover:text-gray-500">Syarat & Ketentuan</li>
+                </ul>
+                <button class="font-bold lg:hidden hover:text-gray-500">&gt;</button>
+            </section>
+        </div>
+    </footer>
+    <!-- Footer End -->
    
 </body>
 </html>
