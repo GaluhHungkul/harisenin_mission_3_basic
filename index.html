@@ -5,7 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        nav {
+            background-color: #181A1C;
+        }
+        #banner {
+            background-image: url("assets/img/banner_bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body >
+    <nav class="h-24 flex items-center justify-between px-5 py-2 lg:px-20 lg:py-6">
+        <div class="flex gap-3 text-white items-center w-[268px]">
+            <img src="assets/img/logo.png" width="25%"  alt="">
+            <a class="text-[10px] hover:text-gray-400" href="#">Series</a>
+            <a class="text-[10px] hover:text-gray-400" href="#">Film</a>
+            <a class="text-[10px] hover:text-gray-400" href="#">Daftar Saya</a>
+        </div>
+        <img src="assets/img/Avatar.png" alt="">
+    </nav>
+    <main style="background-color: #181A1C;" class="min-h-[500px]">
+        <div class="w-full h-56 pt-10" id="banner">
+            <div class="w-80 h-[118px] mx-auto  text-white flex flex-col  gap-3">
+                <p class="font-bold text-[24px]">Duty After School</p>
+                <p class="text-[12px] font-medium">Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut...</p>
+                <section class="flex justify-between items-center w-full">
+                    <div>
+                        <button style="background-color: #0F1E93;" class=" rounded-full py-1 px-3">Mulai</button>
+                        <button style="background-color: #22282A; " class="py-1 px-3 rounded-full hover:bg-gray-400 "><i class="fa-solid fa-circle-info mr-2"></i>Selengkapnya</button>
+                        <span class="border rounded-full p-1">18+</span>
+                    </div>
+                    <img src="assets/img/volume-off.png" alt="">
+                </section>
+            </div>
+        </div>
+        <div  class="pl-5 py-5">
+            <h1 class="font-bold text-[20px] text-white mb-5">Melanjutkan Tonton Film</h1>
+            <div class="flex gap-4 ">  
+                <section>
+                    <div class="w-[309px] h-[151px] flex items-end justify-between p-4 bg-cover bg-no-repeat bg-center text-white rounded" style="background-image: url('assets/img/dont_look_up.png');">
+                        <p class="font-bold">Don't Look Up</p>
+                        <span><i class="fa-solid fa-star " ></i>4.5/5</span>
+                    </div>
+                </section>
+                <section>
+                    <div class="w-[309px] h-[151px] flex items-end justify-between p-4 bg-cover bg-no-repeat bg-center text-white rounded" style="background-image: url('assets/img/dr_strange.png');">
+                        <p class="font-bold">Doctor Strange</p>
+                        <span><i class="fa-solid fa-star " ></i>4.5/5</span>
+                    </div>
+                </section>
+            </div>           
+        </div>
+    </main>
+   
 </body>
 </html>
